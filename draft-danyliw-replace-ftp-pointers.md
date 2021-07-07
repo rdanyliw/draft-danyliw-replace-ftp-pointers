@@ -1,7 +1,7 @@
 ﻿---
 title: Updating References to the IETF FTP Service
 abbrev: Updating References to the IETF FTP Service
-docname: draft-danyliw-replace-ftp-pointers-00
+docname: draft-danyliw-replace-ftp-pointers-01
 updates: 2077, 2418, 2648, 2954, 2955, 3020, 3083, 3201, 3202, 3295, 3684, 3962, 3970, 4036, 4131, 4251, 4323, 4546, 4547, 4639, 4682, 5098, 5428, 6756, 7241
 category: std
 
@@ -133,7 +133,7 @@ Those archives are located at https://www.ietf.org/ietf-ftp/ietf-mail-archive/
 
 ## RFC2648
 
-Section 2 of {{RFC2648}} is updated as follows:
+Section 2 of {{RFC2648}} is updated below.  Note that the scripts in Appendix A have not been updated. 
 
 OLD:
 
@@ -144,7 +144,6 @@ NEW:
 
 The list of minutes maintained by the IETF for each working group and conference in the subtree pointed at by the URL https://www.ietf.org/how/meetings/proceedings/ is considered the definitive assignment of URNs for working group or birds of a feather minutes.
 
-TODO: consider approach to Appendix A scripts
 
 ## RFC2954
 
@@ -211,7 +210,9 @@ OLD:
 
 NEW:
 
-    Email Archive: https://www.ietf.org/ietf-ftp/ietf-mail-archive/frnetmib/
+    Email Archive: 
+    https://www.ietf.org/ietf-ftp/ietf-mail-archive/frnetmib/
+
 
 ## RFC3202
 
@@ -223,7 +224,9 @@ OLD:
 
 NEW:
 
-    Email Archive: https://www.ietf.org/ietf-ftp/ietf-mail-archive/frnetmib/
+    Email Archive: 
+    https://www.ietf.org/ietf-ftp/ietf-mail-archive/frnetmib/
+
 
 ## RFC3295
 
@@ -253,7 +256,7 @@ NEW:
 
    \[7\]  Ogier, R., Message in IETF email archive for MANET,
        https://www.ietf.org/ietf-ftp/ietf-mail-archive/manet/2002-02.mail,
-        February 2002.
+       February 2002.
 
 OLD:
 
@@ -264,7 +267,8 @@ OLD:
 NEW:
 
    \[9\]  Ogier, R., Message in IETF email archive for MANET,
-       https://www.ietf.org/ietf-ftp/ietf-mail-archive/manet/2002-02.mail, March 002.
+       https://www.ietf.org/ietf-ftp/ietf-mail-archive/manet/2002-02.mail, 
+       March 002.
 
 ## RFC3962
 
@@ -466,8 +470,9 @@ If any other RFC not explicitly mentioned in an earlier section contains a refer
 
 # Security Considerations {#seccons}
 
-This document presents no new security consideration beyond those described in the updated documents. 
+This document does not alter the security consideration of the updated documents.  
 
+This document replaces URIs using an FTP scheme with equivalent URIs to the IETF infrastructure (i.e., www.ietf.org) that use HTTPS.  These updates  ensure the continued availability of content referenced in previously published RFCs when the IETF FTP service is retired.  Additionally, the replacement of the clear-text FTP with HTTPS will ensure that resources on the IETF infrastructure can be access in a more secure way.  For example, HTTPS provides an encrypted channel that includes protections such as verifying the server's identity per the certificate verification behavior of the client, and integrity and confidentiality commensurate with the negotiated TLS protocol version and ciphersuite.
 
 # IANA Considerations {#iana}
 
@@ -480,6 +485,4 @@ This document has no IANA actions.
 
 Thank you to Robert Sparks, Glen Barney, Henrik Levkowetz and Russ Housley on the IETF Tools Team for the operations and maintenance information which informed the community discussion with resulted in {{FTP-RETIREMENT}}.
 
-Additionally, thank you to XXX for their contributions and valuable feedback.
-
-
+Additionally, thank you to Russ Housley, Murray Kucherawy, Mirja Kuehlewind, and Scott Mansfield for their valuable feedback and reviews of the specific document updates.
