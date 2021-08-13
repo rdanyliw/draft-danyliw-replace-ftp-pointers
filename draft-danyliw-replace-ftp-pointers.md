@@ -1,7 +1,7 @@
 ﻿---
 title: Updating References to the IETF FTP Service
 abbrev: Updating References to the IETF FTP Service
-docname: draft-danyliw-replace-ftp-pointers-01
+docname: draft-danyliw-replace-ftp-pointers-03
 updates: 2077, 2418, 2648, 2954, 2955, 3020, 3083, 3201, 3202, 3295, 3684, 3962, 3970, 4036, 4131, 4251, 4323, 4546, 4547, 4639, 4682, 5098, 5428, 6756, 7241
 category: std
 
@@ -75,7 +75,7 @@ The IETF FTP service running at ftp.ietf.org, ops.ietf.org and ietf.org will be 
 
 # Introduction {#intro}
 
-In CY2021Q1, after community consultation, it was decided to retire the IETF FTP service running at ftp.ietf.org, ops.ietf.org and ietf.org {{FTP-RETIREMENT}}.  Appendix B of {{FTP-RETIREMENT-PLAN}} identified 30 RFCs published in the IETF and IAB streams between 1997-2006 that had at least one explicit or inline reference to a URI pointing to the IETF FTP service.   To ensure that the materials referenced using the IETF FTP service can still be found, this document formally updates the subset (25) of these documents, which have not been updated by other documents, with HTTPS URIs to the same materials.  
+After community consultation in late 2020, it was decided to retire the IETF FTP service running at ftp.ietf.org, ops.ietf.org and ietf.org {{FTP-RETIREMENT}}.  Appendix B of {{FTP-RETIREMENT-PLAN}} identified 30 RFCs published in the IETF and IAB streams between 1997-2006 that had at least one explicit or inline reference to a URI pointing to the IETF FTP service.   To ensure that the materials referenced using the IETF FTP service can still be found, this document formally updates those RFCs that had not been updated by other documents with HTTPS URIs to the same materials.  
 
 {{updates}} enumerates each of the affected RFCs and provides replacement text.
 
@@ -83,7 +83,7 @@ In CY2021Q1, after community consultation, it was decided to retire the IETF FTP
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 {{RFC2119}} {{!RFC8174}} when, and only when, they appear in all capitals, as shown here.
 
-The original text from an RFC to be updated will be quotes with "OLD" and the replacement text will be quoted with "NEW".
+The original text from an RFC to be updated will be quoted with "OLD" and the replacement text will be quoted with "NEW".
 
 # Updated References {#updates}
 
@@ -355,7 +355,7 @@ NEW:
 
 ## RFC4546
 
-The MIB in Section 5 of {{RFC4546}} is updated as follows:
+The MIB in Section 4 of {{RFC4546}} is updated as follows:
 
 OLD:
 
@@ -483,6 +483,8 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-Thank you to Robert Sparks, Glen Barney, Henrik Levkowetz and Russ Housley on the IETF Tools Team for the operations and maintenance information which informed the community discussion with resulted in {{FTP-RETIREMENT}}.
+Thank you to Robert Sparks, Glen Barney, Henrik Levkowetz and Russ Housley on the IETF Tools Team for the operations and maintenance information that informed the community discussion at {{FTP-RETIREMENT}}.
 
 Additionally, thank you to Russ Housley, Murray Kucherawy, Mirja Kuehlewind, and Scott Mansfield for their valuable feedback and reviews of the specific document updates.
+
+Finally, thank you to Éric Vynke for the sponsoring this document and the AD review. 
